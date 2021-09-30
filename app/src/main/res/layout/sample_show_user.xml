@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userdetail"
+    android:background="#4ADEDE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/black"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:tint="@color/white"
+            android:padding="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameList"
+                android:text="Full Name"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/oxygen_light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastMessage"
+                android:text="Tap to Chat"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/oxygen_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+</LinearLayout>
